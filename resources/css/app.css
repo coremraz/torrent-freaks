@@ -1,0 +1,83 @@
+.screenshot {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+}
+
+.enlarged-image{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.bg-container {
+    background-color: #141414;
+}
+
+.bg-card {
+    background-color: #1f1f1f;
+}
+
+.text-base {
+    color: #e8e8e8;
+}
+
+.text-header {
+    color: #61a2ff;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+
+.pagination {
+align-items: center;
+}
+
+.pagination > li > a
+{
+    background-color: #606060;
+    border-radius: 0.5vh;
+    color: #61a2ff;
+    border: none;
+    margin: 0.5vh;
+    padding: 0.7vw;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    background-color: #61a2ff;
+    color: #ddd;
+    border-radius: 0.5vh;
+}
+.page-item.disabled .page-link,
+.page-item.active .page-link  {
+    background-color: #606060;
+    color: #ffffff;
+    border: none;
+    margin-right: 0.5vh;
+    border-radius: 0.5vh;
+    padding: 0.7vw;
+}
+
+.pagination > li > .page-link {
+    color: #61a2ff;
+    background-color: #606060;
+}
